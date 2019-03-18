@@ -1,0 +1,190 @@
+/* 10-22-2018 Julia Endress */
+
+/*Global Styling*/
+body, html {
+	height: auto;
+}
+
+/*Self created Containers*/
+.myContainer{
+	justify-content: center;
+	margin: 50px auto;
+	padding: 15px;
+	background-color: rgba(248, 248, 248, 0.9);
+	box-shadow: 0 0px 30px 0 rgba(255,255,255, .4), 0 0px 30px 0 rgba(255,255,255, .4);
+	border-radius: 3px;
+}
+.myContainerLogin{
+	justify-content: center;
+	margin-left: 30%;
+	margin-right: 30%;
+	/*margin-top: 10%; demo*/
+	padding: 10px;
+	background-color: rgba(255,255,255,0.4);
+	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
+	border-radius: 3px;
+}
+.myContainerLogin h1.center {
+	font-family: 'Lora', serif;
+	margin-left: 20pt;
+	font-size: 22pt;
+}
+.myContainerIndex{
+	justify-content: center;
+	margin-top: 5%;
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-bottom: 2%;
+	padding: 15px;
+	background-color: rgba(255,255,255,0.4);
+	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
+	border-radius: 3px;
+	padding-top: 0;
+}
+.myContainerIndex h1 {
+	font-family: 'Lora', serif;
+	margin-left: 20pt;
+	font-size: 22pt;
+}
+.myContainerIndex h1.center {
+	text-align: center;
+}
+.myContainer h1 {
+	font-family: 'Lora', serif;
+	font-size: 22pt;
+}
+.myContainer form {
+	font-family: 'Lora', serif;
+}
+.myContainer h4 {
+	font-family: 'Lora', serif;
+}
+.myContainer h3 {
+	font-family: 'Lora', serif;
+}
+/*Animations*/
+.elementToFadeInAndOut {
+	-webkit-animation: fadeinout 5s linear forwards;
+	animation: fadeinout 3s linear forwards;
+}
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; display: none;}
+  50% { opacity: 1; }
+}
+@keyframes fadeinout {
+  0%,100% { opacity: 0; display: none;}
+  50% { opacity: 1; }
+}
+.elementToFadeIn {
+	-webkit-animation: fadein 1s ; 
+	animation: fadein 1s ;
+
+}
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+/*General Styling*/
+.customhr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(59, 59, 59, 0), rgba(139, 139, 139, 0.75), rgba(59, 59, 59, 0));
+}
+
+#mybackground {
+	background: black url("../images/background.png") no-repeat center center fixed; 
+	background-color: grey;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.special a {
+	text-decoration: none;
+	color: #842e9e;
+}
+.special a:visited {
+    color: #842e9e;
+    text-decoration: none;
+}
+.special a:hover {
+    color: #842e9e;
+    text-decoration: none;
+}
+.special a:active {
+    color: #842e9e;
+    text-decoration: none;
+}
+#myLogo{
+	color: black;
+}
+#loginForm img {
+	height: 20%;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+#stickyImg{
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-left: 40pt;
+}
+.mySpan{
+	color: #003976;
+}
+#myH2 {
+	font-family: 'Lora', serif;
+}
+#myNavbar ul li a {
+	color: black;
+	font-family: 'Lora', serif;
+}
+#myNavbar ul li a:vistied {
+	background-color: transparent;
+	color: darkblue;
+}
+#myNavbar ul li a:hover {
+	background-color: transparent;
+	color: darkblue;
+}
+#myNavbar ul li a:active {
+	color: white;
+}
+.navbar .navbar-toggle {
+  border-color: black; /* Removes border color */
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: black; /* Changes regular toggle color */
+}
+.navbar .navbar-toggle .icon-bar:hover {
+  background-color: black; /* Changes toggle color on hover */
+}
+.myContent {
+	margin-left: 20pt;
+	font-family: 'Lora', serif;
+}
+input.form-control:focus{
+    border-color: #ff7f00;
+    box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
+    0px 0px 8px rgba(126, 209, 71, 0.5);
+}
+select.form-control:focus{
+    border-color: #ff7f00;
+    box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
+    0px 0px 8px rgba(126, 209, 71, 0.5);
+}
+select#sel1.form-control:focus{
+    border-color: #ff7f00;
+    box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
+    0px 0px 8px rgba(126, 209, 71, 0.5);
+}
+select#sel2.form-control:focus{
+    border-color: #ff7f00;
+    box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
+    0px 0px 8px rgba(126, 209, 71, 0.5);
+}
+.myForm select[multiple],
+select[size]{
+	height: 225px;
+}
