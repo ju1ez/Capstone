@@ -1,26 +1,15 @@
 <?php require_once "config/login_config.php" ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Graduation, The Fastest Option</title>
-  <!-- Favicon -->
-  <link href="images/login.png" rel="icon">
-  <!-- CSS -->
-  <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+<?php include "header.file.php"?>
 <body id="mybackground">
   <div class="container-fluid">
     <div class="elementToFadeIn">
-    <p class="text-center" style="color:Red; font-weight: bold; font-size: 60pt; padding: 0; margin:0;">DEMO</p>
+    <!--<p class="text-center" style="color:Red; font-weight: bold; font-size: 60pt; padding: 0; margin:0;">DEMO</p>-->
       <div class="myContainerLogin">  
         <div class="row">
             <div class="col-md-12">
+              <p style="font-size: 25pt;"><a href="index.php"><span class="glyphicon glyphicon-chevron-left"></span></a></p>
               <div id="loginForm">
                 <figure id ="loginImg"><img href="images/lock.png" src="images/lock.png" alt="Lock Icon" titlte = "Lock Icon"/></figure>
                 <h2 class="text-center">Login</h2>
@@ -37,7 +26,8 @@
                     </div>
                     <div class="form-group">
                     <p>Don't have an account? <a href="register.php">Sign up now</a>.
-                    <input type="submit" class="btn btn-success pull-right" value="Login"></p>
+                       <button type="reset" class="btn btn-info pull-right" value="Reset" style="margin-left: 5pt;">Reset</button>
+                    <input type="submit" class="btn btn-success pull-right" value="Login"></p>         
                     </div>               
                 </form>
               </div>

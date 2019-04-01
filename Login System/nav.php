@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <span class="navbar-brand" style="margin-left: 20pt;">Graduation, The Fastest Option</span>
+      <span class="navbar-brand">Graduation, The Fastest Option</span>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">

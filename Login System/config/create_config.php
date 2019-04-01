@@ -8,7 +8,7 @@ function create_plan() {
          $sql = "SELECT * FROM templates";
          $result = $pdo->query($sql);
          $result1 = $pdo->query($sql);
-         echo '<form action="plan.php" method="post"> 
+         echo '<form action="welcome.php" method="post"> 
                         <div class="form-group">
                           <div class="form-group">
                             <label for="sel1">Degree</label>

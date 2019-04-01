@@ -3,8 +3,11 @@
 /*Global Styling*/
 body, html {
 	height: auto;
+	f
 }
-
+body {
+	font-family: 'Montserrat', sans-serif !important;
+}
 /*Self created Containers*/
 .myContainer{
 	justify-content: center;
@@ -24,14 +27,14 @@ body, html {
 	justify-content: center;
 	margin-left: 30%;
 	margin-right: 30%;
-	/*margin-top: 10%; demo*/
+	margin-top: 10%; 
 	padding: 10px;
 	background-color: rgba(255,255,255,0.4);
 	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
 	border-radius: 3px;
 }
 .myContainerLogin h1.center {
-	font-family: 'Lora', serif;
+	font-family: 'Montserrat', sans-serif;
 	margin-left: 20pt;
 	font-size: 22pt;
 }
@@ -46,27 +49,6 @@ body, html {
 	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
 	border-radius: 3px;
 	padding-top: 0;
-}
-.myContainerIndex h1 {
-	font-family: 'Lora', serif;
-	margin-left: 20pt;
-	font-size: 22pt;
-}
-.myContainerIndex h1.center {
-	text-align: center;
-}
-.myContainer h1 {
-	font-family: 'Lora', serif;
-	font-size: 22pt;
-}
-.myContainer form {
-	font-family: 'Lora', serif;
-}
-.myContainer h4 {
-	font-family: 'Lora', serif;
-}
-.myContainer h3 {
-	font-family: 'Lora', serif;
 }
 /*Animations*/
 .elementToFadeInAndOut {
@@ -136,15 +118,9 @@ body, html {
     top: 0;
     margin-left: 40pt;
 }
-.mySpan{
-	color: #003976;
-}
-#myH2 {
-	font-family: 'Lora', serif;
-}
 #myNavbar ul li a {
 	color: black;
-	font-family: 'Lora', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 #myNavbar ul li a:vistied {
 	background-color: transparent;
@@ -168,7 +144,7 @@ body, html {
 }
 .myContent {
 	margin-left: 20pt;
-	font-family: 'Lora', serif;
+	font-family: 'Montserrat', sans-serif;
 }
 input.form-control:focus{
     border-color: #ff7f00;
@@ -201,4 +177,15 @@ select[size]{
 a.myAnchor {
   text-decoration: none;
   color: white;
+}
+#myPanel_img {
+	width: 400px;
+	height: 200px;
+}
+div#myPanel_header{
+	margin: 0; 
+	padding: 0;
+}
+#offset {
+	margin: 2pt;
 }
