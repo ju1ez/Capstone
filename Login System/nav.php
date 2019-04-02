@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <span class="navbar-brand">Account: <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> | Plan Modification</span>
+      <span class="navbar-brand">Account: <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> | Plan List</span>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">

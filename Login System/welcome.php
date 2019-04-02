@@ -13,7 +13,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-              <h1><b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>, and welcome!</h1>
+              <h1></h1>
             </div>
           <div class="col-md-12">
             <div class="col-sm-1"></div>
