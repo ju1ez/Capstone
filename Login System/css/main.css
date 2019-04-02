@@ -33,6 +33,16 @@ body {
 	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
 	border-radius: 3px;
 }
+.myContainerConfirm{
+	justify-content: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 10%; 
+	padding: 30px;
+	background-color: rgba(255,255,255,0.4);
+	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
+	border-radius: 3px;
+}
 .myContainerLogin h1.center {
 	font-family: 'Montserrat', sans-serif;
 	margin-left: 20pt;
@@ -118,20 +128,13 @@ body {
     top: 0;
     margin-left: 40pt;
 }
-#myNavbar ul li a {
-	color: black;
+#myNavbar ul#myLink li a {
 	font-family: 'Montserrat', sans-serif;
+	color: black;
 }
-#myNavbar ul li a:vistied {
+#myNavbar ul#myLink li a:hover {
 	background-color: transparent;
-	color: darkblue;
-}
-#myNavbar ul li a:hover {
-	background-color: transparent;
-	color: darkblue;
-}
-#myNavbar ul li a:active {
-	color: white;
+	color:white;
 }
 .navbar .navbar-toggle {
   border-color: black; /* Removes border color */
@@ -188,4 +191,7 @@ div#myPanel_header{
 }
 #offset {
 	margin: 2pt;
+}
+#confirm {
+	margin-bottom: 30pt;
 }

@@ -8,7 +8,7 @@
       </button>
       <span class="navbar-brand">Graduation, The Fastest Option</span>
     </div>
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
          <li class="active"><a href="#">Home</a></li>
         <li><a href="index.php">About</a></li>

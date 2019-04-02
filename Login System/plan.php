@@ -9,12 +9,7 @@
     <div class="elementToFadeIn">
       <div class="myContainerIndex">
         <div class="row">
-          <?php include "nav.php" ?>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Hi <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>, and welcome!</h1>
-          </div>
+          <?php include "nav_plan.php" ?>
         </div>
           <div class="row">
             <div class="col-md-6">
@@ -50,48 +45,7 @@
                       </optgroup>
                     </select>
                   </div>
-                    <fieldset disabled>
-                      <div class="form-group">
-                        <label for="disabledTextInput">Disabled input</label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-                      </div>
-                      <div class="form-group">
-                        <label for="disabledSelect">Disabled select menu</label>
-                        <select id="disabledSelect" class="form-control">
-                          <option>Disabled select</option>
-                        </select>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Can't check this
-                        </label>
-                      </div>
-                    </fieldset>                 
-                  <div class="form-group">
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox" value="">
-                        Option one is this and that &mdash; be sure to include why it's great
-                      </label>
-                    </div>
-                    <div class="radio">
-                      <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                        Option one is this and that &mdash; be sure to include why it's great
-                      </label>
-                    </div>
-                    <div class="radio">
-                      <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                        Option two can be something else and selecting it will deselect option one
-                      </label>
-                    </div>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Check me out
-                    </label>
-                  </div>
+
                   <button type="submit" class="btn btn-default">Submit</button>
                 </form>
               </div>

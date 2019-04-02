@@ -23,6 +23,7 @@
         <li><a href="#">Page 3</a></li>-->
       </ul>
       <ul class="nav navbar-nav navbar-right" id="myLink">
+        <li><a href="welcome.php"><span class="glyphicon glyphicon-list-alt"></span> Plans</a></li>
         <li><a href="reset.php"><span class="glyphicon glyphicon-cog"></span> Reset Password</a></li>
         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
       </ul>
