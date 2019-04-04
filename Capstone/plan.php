@@ -1,4 +1,5 @@
 <?php include "config/config.php";
+include "config/roadmap_config.php";
 require_once "config/session_config.php" ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,26 +13,35 @@ require_once "config/session_config.php" ?>
         <div class="row">
           <?php include "nav_plan.php" ?>
         </div>
-          <div class="row">
-            <div class="col-md-6">
+        <div class="row">
+        <div class="col-md-12">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <?php include "config/templatetable_config.php" ?>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+          <div class="row" >
+          <div class="col-md-12" style="margin-top: 25pt;">
+            <div class="col-md-6" >
               <div class="myContent">
                 <form class="myForm" action="get">
                    <div class="form-group">
-                     <label>Critical List</label>
-                      <select multiple name ="cour" class="form-control">
+                     <label>Critical</label>
+                      <select name ="cour" class="form-control">
                         <option selected>Select...</option> 
-                          <optgroup label="Critical Course List">
+                          <optgroup label="Critical Courses">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM courses';
+                                $sql = 'SELECT * FROM courses WHERE SubjectTitle="Computer Science"';
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {         
                                    echo '<option value="' . $row['CourseID'] . '"';
                                    if (isset($_GET['cour']) && $row['CourseID'] == $_GET['cour']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['CourseTitle'];
-                                    echo ' (' . $row['CourseID'] . ')';
+                                   echo $row['CourseID'];
+                                   echo ': ' . $row['CourseTitle'];
                                    echo '</option>';
                                  } ?>                  
                           </option>
@@ -39,21 +49,21 @@ require_once "config/session_config.php" ?>
                       </select>
                    </div>
                    <div class="form-group">
-                     <label>Prerequisite List</label>
-                      <select multiple name ="prer" class="form-control">
+                     <label>Kent Core</label>
+                      <select name ="prer" class="form-control">
                         <option selected>Select...</option> 
-                          <optgroup label="Prerequisite List">
+                          <optgroup label="Kent Core Requirements">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM prereqs';
+                                $sql = 'SELECT * FROM courses WHERE ((CategoryTitle="Kent Core" OR CategoryTitle="Major Requirement") AND SubjectTitle="Computer Science")';
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {         
                                    echo '<option value="' . $row['CourseID'] . '"';
                                    if (isset($_GET['prer']) && $row['CourseID'] == $_GET['prer']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['PrereqID'];
-                                   echo ' (Course: ' . $row['CourseID'] . ')';
+                                   echo $row['CourseID'];
+                                   echo ': ' . $row['CourseTitle'];
                                    echo '</option>';
                                  } ?>                  
                           </option>
@@ -76,6 +86,7 @@ require_once "config/session_config.php" ?>
               <p id="selection"></p>
               <script type="text/javascript" src="js/nodeSelect.js"></script>
             </div>
+          </div>
         </div>
       </div>
     </div>

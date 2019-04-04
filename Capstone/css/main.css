@@ -149,6 +149,8 @@ body {
 	margin-left: 20pt;
 	font-family: 'Montserrat', sans-serif;
 }
+/*
+ORANGLE GLOW ON INPUT TYPES INSTEAD OF BLUE
 input.form-control:focus{
     border-color: #ff7f00;
     box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
@@ -168,7 +170,7 @@ select#sel2.form-control:focus{
     border-color: #ff7f00;
     box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
     0px 0px 8px rgba(126, 209, 71, 0.5);
-}
+}*/
 .myForm select[multiple],
 select[size]{
 	height: 225px;
@@ -194,4 +196,12 @@ div#myPanel_header{
 }
 #confirm {
 	margin-bottom: 30pt;
+}
+.icon-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: 0;
+    background: transparent;
 }
