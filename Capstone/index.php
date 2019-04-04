@@ -10,7 +10,7 @@
          <div class="col-md-12">
             <div class="jumbotron">
               <h1>Welcome!</h1> 
-              <p>You have reach the best stop to plan for your graduation!</p> 
+              <p>You have reached the best stop to plan for your graduation!</p> 
             </div>
           </div>
           <div class="col-md-12">

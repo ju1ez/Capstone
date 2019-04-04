@@ -10,6 +10,7 @@
                 <div class="col-md-12">
                   <p style="font-size: 25pt;"><a href="index.php"><span class="glyphicon glyphicon-chevron-left"></span></a></p>
                   <h2 class="text-center">Sign Up</h2>
+                  <?php echo $confirm_message; ?>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                             <label>Username</label>

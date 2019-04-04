@@ -5,6 +5,7 @@ require_once "config.php";
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
+$confirm_message = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -75,8 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             // Attempt to execute the prepared statement
             if($stmt->execute()){
-                // Redirect to login page
-                header("location: confirm.php");
+                $confirm_message = "<p class='text-center' style='color: green; font-size: 15pt;'>Your account was created successfully!</p>";
             } else{
                 echo "Something went wrong. Please try again later.";
             }
