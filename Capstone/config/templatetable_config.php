@@ -1,6 +1,6 @@
 <?php
-$semesterNum = 1;
-echo '<table class="table  table-hover table-condensed ">
+$semesterNum = 1; // 
+echo '<table class="table  table-hover table-condensed table-responsive"> 
 <thead >
 <tr >
   <th>Semester</th>
