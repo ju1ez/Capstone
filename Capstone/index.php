@@ -13,45 +13,39 @@
               <p>You have reached the best stop to plan for your graduation!</p> 
             </div>
           </div>
-          <div class="col-md-12">
-            <div class="col-sm-3"></div>
+          <div class="col-md-12" id="myDiv">
             <div class="col-sm-3">
               <div class="panel panel-default">
                 <div class="panel-heading" id="myPanel_header">
-                <a href="images/1.jpg"><img id="myPanel_img" class="img-responsive center-block" src="images/1.jpg"></a>
-                <a href="images/1.jpg"><p id ="offset" class="text-center">Test Location</p></a>
+                <a href="http://catalog.kent.edu/" target="_blank"><img id="myPanel_img" class="img-responsive center-block" src="images/catelog.png"></a>      
+                <a href="http://catalog.kent.edu/" target="_blank"><p id ="offset" class="text-center">University Catalog</p></a>
                </div>
              </div>
             </div>
             <div class="col-sm-3">
               <div class="panel panel-default">
                 <div class="panel-heading" id="myPanel_header">
-                <a href="images/2.jpg"><img id="myPanel_img" class="img-responsive center-block" src="images/2.jpg"></a>      
-                <a href="images/2.jpg"><p id ="offset" class="text-center">Test Location</p></a>
-               </div>
-             </div>
-            </div>
-            <div class="col-sm-3"></div>
-          </div>
-          <div class="col-md-12">
-          <div class="col-sm-3"></div>
-            <div class="col-sm-3">
-              <div class="panel panel-default">
-                <div class="panel-heading" id="myPanel_header">
-                <a href="images/3.jpg"><img id="myPanel_img" class="img-responsive center-block" src="images/3.jpg"></a>      
-                <a href="images/3.jpg"><p id ="offset" class="text-center">Test Location</p></a>
+                <a href="http://catalog.kent.edu/programsaz/" target="_blank"><img id="myPanel_img" class="img-responsive center-block" src="images/prog.png"></a>
+                <a href="http://catalog.kent.edu/programsaz/" target="_blank"><p id ="offset" class="text-center">Program Catalog</p></a>
                </div>
              </div>
             </div>
             <div class="col-sm-3">
               <div class="panel panel-default">
                 <div class="panel-heading" id="myPanel_header">
-                <a href="images/4.jpg"><img id="myPanel_img" class="img-responsive center-block" src="images/4.jpg"></a>      
-                <a href="images/4.jpg"><p id ="offset" class="text-center">Test Location</p></a>
+                <a href="http://catalog.kent.edu/coursesaz/" target="_blank"><img id="myPanel_img" class="img-responsive center-block" src="images/course.png"></a>      
+                <a href="http://catalog.kent.edu/coursesaz/" target="_blank"><p id ="offset" class="text-center">Course Catalog</p></a>
                </div>
              </div>
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+              <div class="panel panel-default">
+                <div class="panel-heading" id="myPanel_header">
+                <a href="http://www.kent.edu/calendars/" target="_blank"><img id="myPanel_img" class="img-responsive center-block" src="images/cal.png"></a>      
+                <a href="http://www.kent.edu/calendars/" target="_blank"><p id ="offset" class="text-center">Academic Calendar</p></a>
+               </div>
+             </div>
+            </div>
           </div>
       </div>
     </div>

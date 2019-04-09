@@ -136,6 +136,15 @@ body {
 	background-color: transparent;
 	color:white;
 }
+#myNavbar ul#myLink li a:link {
+	background-color: transparent;
+}
+#myNavbar ul#myLink li a:visted {
+	background-color: transparent;
+}
+#myNavbar ul#myLink li a:active {
+	background-color: transparent;
+}
 .navbar .navbar-toggle {
   border-color: black; /* Removes border color */
 }
@@ -184,12 +193,16 @@ a.myAnchor {
   color: white;
 }
 #myPanel_img {
-	width: 400px;
-	height: 200px;
+	padding: 5pt;
+	width: 50%; /* You can set the dimensions to whatever you want */
+   
 }
 div#myPanel_header{
 	margin: 0; 
 	padding: 0;
+}
+div#myDiv img {
+	height: 150px;
 }
 #offset {
 	margin: 2pt;

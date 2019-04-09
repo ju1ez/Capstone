@@ -28,7 +28,7 @@ require_once "config/session_config.php" ?>
                 <form class="myForm" action="get">
                    <div class="form-group">
                      <label>Critical</label>
-                      <select name ="courseid" class="form-control">
+                      <select name ="cour" class="form-control">
                         <option selected>Select...</option> 
                           <optgroup label="Critical Courses">
                             <option>
@@ -37,7 +37,7 @@ require_once "config/session_config.php" ?>
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {         
                                    echo '<option value="' . $row['CourseID'] . '"';
-                                   if (isset($_GET['courseid']) && $row['CourseID'] == $_GET['courseid']) 
+                                   if (isset($_GET['cour']) && $row['CourseID'] == $_GET['cour']) 
                                       echo ' selected ';
                                    echo '>';
                                    echo $row['CourseID'];

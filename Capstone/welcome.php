@@ -15,7 +15,7 @@
           <div class="col-md-12">
               <h1></h1>
             </div>
-          <div class="col-md-12">
+          <div class="col-md-12" id="myDiv">
             <div class="col-sm-1"></div>
             <div class="col-sm-3">
               <div class="panel panel-default">
