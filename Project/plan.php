@@ -59,9 +59,9 @@ require_once "config/session_config.php" ?>
                     </div>
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 4</a></h4>
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse4">Semester 4</a></h4>
                       </div>
-                      <div class="panel-collapse collapse" id="collapse3">
+                      <div class="panel-collapse collapse" id="collapse4">
                         <div class="panel-body">
                           <?php include 'include/dropdowns.php'; ?>
                         </div>
@@ -69,9 +69,9 @@ require_once "config/session_config.php" ?>
                     </div>
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 5</a></h4>
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse5">Semester 5</a></h4>
                       </div>
-                      <div class="panel-collapse collapse" id="collapse3">
+                      <div class="panel-collapse collapse" id="collapse5">
                         <div class="panel-body">
                           <?php include 'include/dropdowns.php'; ?>
                         </div>
@@ -79,9 +79,9 @@ require_once "config/session_config.php" ?>
                     </div>
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 6</a></h4>
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse6">Semester 6</a></h4>
                       </div>
-                      <div class="panel-collapse collapse" id="collapse3">
+                      <div class="panel-collapse collapse" id="collapse6">
                         <div class="panel-body">
                           <?php include 'include/dropdowns.php'; ?>
                         </div>
@@ -89,9 +89,9 @@ require_once "config/session_config.php" ?>
                     </div>
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 7</a></h4>
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse7">Semester 7</a></h4>
                       </div>
-                      <div class="panel-collapse collapse" id="collapse3">
+                      <div class="panel-collapse collapse" id="collapse7">
                         <div class="panel-body">
                           <?php include 'include/dropdowns.php'; ?>
                         </div>
@@ -99,9 +99,9 @@ require_once "config/session_config.php" ?>
                     </div>
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 8</a></h4>
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse8">Semester 8</a></h4>
                       </div>
-                      <div class="panel-collapse collapse" id="collapse3">
+                      <div class="panel-collapse collapse" id="collapse8">
                         <div class="panel-body">
                           <?php include 'include/dropdowns.php'; ?>
                         </div>
