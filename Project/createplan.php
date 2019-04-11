@@ -1,7 +1,7 @@
 <?php include "config/create_config.php"?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include "include/header.file.php"?>
+<?php include "include/head.php"?>
 <body>
 <body id="mybackground">
   <div class="container-fluid">

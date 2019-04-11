@@ -194,7 +194,7 @@ a.myAnchor {
 }
 #myPanel_img {
 	padding: 5pt;
-	width: 50%; /* You can set the dimensions to whatever you want */
+	width: 50%; 
    
 }
 div#myPanel_header{
@@ -217,4 +217,8 @@ div#myDiv img {
     outline: none;
     border: 0;
     background: transparent;
+}
+.myPanel-title a:hover{
+	color: #842e9e;
+    text-decoration: none;
 }

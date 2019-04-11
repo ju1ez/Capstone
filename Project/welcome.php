@@ -1,7 +1,7 @@
 <?php require_once "config/session_config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include "include/header.file.php"?>
+<?php include "include/head.php"?>
 <body id="mybackground">
 <script type="text/javascript" src="js/vis.min.js"></script>
 <script type="text/javascript" src="js/nodes.js"></script>

@@ -3,7 +3,7 @@ include "config/roadmap_config.php";
 require_once "config/session_config.php" ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include "include/header.file.php"?>
+<?php include "include/head.php"?>
 <body id="mybackground" onload="draw();">
 <script type="text/javascript" src="js/vis.min.js"></script>
 <script type="text/javascript" src="js/nodes.js"></script>
@@ -21,61 +21,105 @@ require_once "config/session_config.php" ?>
           </div>
           <div class="col-sm-1"></div>
         </div>
-          <div class="row" >
+          <div class="row">
           <div class="col-md-12" style="margin-top: 25pt;">
             <div class="col-md-6" >
-
               <div class="myContent">
                 <form class="myForm" action="get">
-                   <!--add form drop downs here -->
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse1">Semester One</a></h4>
-                </div>
-                <div class="panel-collapse collapse" id="collapse1">
-                  <div class="panel-body">
-                  <?php include 'include/dropdowns.php'; ?>
-                  </div>
-                </div>
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse1">Semester 1</a></h4>
+                      </div>
+                      <div class="panel-collapse collapse" id="collapse1">
+                        <div class="panel-body">
+                        <?php include 'include/dropdowns.php'; ?>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="myPanel-title"><a class="special" data-parent="#accordion" data-toggle="collapse" href="#collapse2">Semester 2</a></h4>
+                      </div>
+                      <div class="panel-collapse collapse" id="collapse2">
+                        <div class="panel-body">
+                          <?php include 'include/dropdowns.php'; ?>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 3</a></h4>
+                      </div>
+                      <div class="panel-collapse collapse" id="collapse3">
+                        <div class="panel-body">
+                          <?php include 'include/dropdowns.php'; ?>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 4</a></h4>
+                      </div>
+                      <div class="panel-collapse collapse" id="collapse3">
+                        <div class="panel-body">
+                          <?php include 'include/dropdowns.php'; ?>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 5</a></h4>
+                      </div>
+                      <div class="panel-collapse collapse" id="collapse3">
+                        <div class="panel-body">
+                          <?php include 'include/dropdowns.php'; ?>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 6</a></h4>
+                      </div>
+                      <div class="panel-collapse collapse" id="collapse3">
+                        <div class="panel-body">
+                          <?php include 'include/dropdowns.php'; ?>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 7</a></h4>
+                      </div>
+                      <div class="panel-collapse collapse" id="collapse3">
+                        <div class="panel-body">
+                          <?php include 'include/dropdowns.php'; ?>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester 8</a></h4>
+                      </div>
+                      <div class="panel-collapse collapse" id="collapse3">
+                        <div class="panel-body">
+                          <?php include 'include/dropdowns.php'; ?>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                       
+                </form>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse2">Semester Two</a></h4>
-                </div>
-                <div class="panel-collapse collapse" id="collapse2">
-                  <div class="panel-body">
-                    <?php include 'include/dropdowns.php'; ?>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Semester Three</a></h4>
-                </div>
-                <div class="panel-collapse collapse" id="collapse3">
-                  <div class="panel-body">
-                    <?php include 'include/dropdowns.php'; ?>
-                  </div>
-                </div>
-              </div>
-            </div>
-                    
-                 </form> <!-- end form -->
-                  </div>
-
-                  </div>         
-            <div class="col-md-6">
-
+             </div>         
+             <div class="col-md-6">
                 <button type="button" class="btn btn-default" id="btn-UD" value="Up-Down">Up-Down</button>
                 <button type="button" class="btn btn-primary" id="btn-DU" value="Down-Up">Down-Up</button>
                 <button type="button" class="btn btn-info" id="btn-LR" value="Left-Right">Left-Right</button>
                 <button type="button" class="btn btn-success" id="btn-RL" value="Right-Left">Right-Left</button>
                 <input type="hidden" id="direction" value="UD">
-            <br /><br />
+              <br /><br />
               <div id="mynetwork" class="fullScreenModal">
               </div>
-              
               <script type="text/javascript" src="js/nodeSelect.js"></script>
             </div>
           </div>
