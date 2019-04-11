@@ -39,11 +39,11 @@ require_once "config/session_config.php" ?>
                     </div>
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h4 class="myPanel-title"><a class="special" data-parent="#accordion" data-toggle="collapse" href="#collapse2">Semester 2</a></h4>
+                        <h4 class="myPanel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapse2">Semester 2</a></h4>
                       </div>
                       <div class="panel-collapse collapse" id="collapse2">
                         <div class="panel-body">
-                          <?php include 'include/dropdowns.php'; ?>
+                        <?php include 'include/dropdowns.php'; ?>
                         </div>
                       </div>
                     </div>
