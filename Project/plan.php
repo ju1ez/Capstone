@@ -17,7 +17,7 @@ require_once "config/session_config.php" ?>
         <div class="col-md-12">
           <div class="col-sm-1"></div>
           <div class="col-sm-10">
-            <?php include "config/templatetable_config.php" ?>
+            <?php include "include/templatetable.php" ?>
           </div>
           <div class="col-sm-1"></div>
         </div>

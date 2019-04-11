@@ -218,7 +218,19 @@ div#myDiv img {
     border: 0;
     background: transparent;
 }
+.myPanel-title a:link{
+	color: #842e9e;
+    text-decoration: none;
+}
 .myPanel-title a:hover{
+	color: #842e9e;
+    text-decoration: none;
+}
+.myPanel-title a:active{
+	color: #842e9e;
+    text-decoration: none;
+}
+.myPanel-title a:visited{
 	color: #842e9e;
     text-decoration: none;
 }
