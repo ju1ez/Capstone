@@ -1,6 +1,5 @@
 <?php
 include 'include/requirementDropdown.php';
-
 $semesterNum=1;
 foreach($roadmap as $semester){
     echo '<div class="panel panel-default">';
@@ -23,7 +22,4 @@ foreach($roadmap as $semester){
     echo '</div>';
   $semesterNum++;
 }
-
-
-
 ?>

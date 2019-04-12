@@ -1,9 +1,8 @@
 /* 10-22-2018 Julia Endress */
-
 /*Global Styling*/
 body, html {
 	height: auto;
-	f
+	
 }
 body {
 	font-family: 'Montserrat', sans-serif !important;
@@ -158,28 +157,7 @@ body {
 	margin-left: 20pt;
 	font-family: 'Montserrat', sans-serif;
 }
-/*
-ORANGLE GLOW ON INPUT TYPES INSTEAD OF BLUE
-input.form-control:focus{
-    border-color: #ff7f00;
-    box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
-    0px 0px 8px rgba(126, 209, 71, 0.5);
-}
-select.form-control:focus{
-    border-color: #ff7f00;
-    box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
-    0px 0px 8px rgba(126, 209, 71, 0.5);
-}
-select#sel1.form-control:focus{
-    border-color: #ff7f00;
-    box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
-    0px 0px 8px rgba(126, 209, 71, 0.5);
-}
-select#sel2.form-control:focus{
-    border-color: #ff7f00;
-    box-shadow: 0px 1px 1px rgba(126, 209, 71, 0.075) inset, 
-    0px 0px 8px rgba(126, 209, 71, 0.5);
-}*/
+
 .myForm select[multiple],
 select[size]{
 	height: 225px;
@@ -194,8 +172,7 @@ a.myAnchor {
 }
 #myPanel_img {
 	padding: 5pt;
-	width: 50%; /* You can set the dimensions to whatever you want */
-   
+	width: 50%; 
 }
 div#myPanel_header{
 	margin: 0; 
@@ -223,4 +200,20 @@ div#myDiv img {
 }
 #planOffset{
 	margin-top: 25pt;
+}
+.myPanel-title a:link {
+	text-decoration: none;
+	color: #842e9e;
+}
+.myPanel-title a:visited {
+	text-decoration: none;
+	color: #842e9e;
+}
+.myPanel-title a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+.myPanel-title a:active {
+	text-decoration: none;
+	color: #842e9e;
 }
