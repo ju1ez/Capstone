@@ -194,7 +194,7 @@ a.myAnchor {
 }
 #myPanel_img {
 	padding: 5pt;
-	width: 50%; 
+	width: 50%; /* You can set the dimensions to whatever you want */
    
 }
 div#myPanel_header{
@@ -218,19 +218,9 @@ div#myDiv img {
     border: 0;
     background: transparent;
 }
-.myPanel-title a:link{
-	color: #842e9e;
-    text-decoration: none;
+#noMarg{
+	margin:0px;
 }
-.myPanel-title a:hover{
-	color: #842e9e;
-    text-decoration: none;
-}
-.myPanel-title a:active{
-	color: #842e9e;
-    text-decoration: none;
-}
-.myPanel-title a:visited{
-	color: #842e9e;
-    text-decoration: none;
+#planOffset{
+	margin-top: 25pt;
 }

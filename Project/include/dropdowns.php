@@ -5,16 +5,15 @@
                          <optgroup label="Kent Core">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM requirements WHERE Requirement="KCMP"';
+                                $sql = 'SELECT * FROM kent_core WHERE Requirement="KCMP"';
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {   
 
-                                   echo '<option value="' . $row['CourseID'] . '"';
-                                   if (isset($_GET['kcmp1']) && $row['CourseID'] == $_GET['kcmp1']) 
+                                   echo '<option value="' . $row['Course_ID'] . '"';
+                                   if (isset($_GET['kcmp1']) && $row['Course_ID'] == $_GET['kcmp1']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['CourseID'];
-                                   echo ': ' . $row['CourseID'];
+                                   echo $row['Course_ID'];
                                    echo '</option>';
                                 }
                               ?>                  
@@ -29,14 +28,14 @@
                           <optgroup label="KFA - Kent Core Requirement">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM requirements WHERE Requirement="KFA"';
+                                $sql = 'SELECT * FROM kent_core WHERE Requirement="KFA"';
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {         
-                                   echo '<option value="' . $row['CourseID'] . '"';
-                                   if (isset($_GET['kfa']) && $row['CourseID'] == $_GET['kfa']) 
+                                   echo '<option value="' . $row['Course_ID'] . '"';
+                                   if (isset($_GET['kfa']) && $row['Course_ID'] == $_GET['kfa']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['CourseID'];
+                                   echo $row['Course_ID'];
                                    echo '</option>';
                                  } ?>                  
                           </option>
@@ -50,14 +49,14 @@
                           <optgroup label="KHUM - Kent Core Requirement">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM requirements WHERE Requirement="KHUM"';
+                                $sql = 'SELECT * FROM kent_core WHERE Requirement="KHUM"';
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {         
-                                   echo '<option value="' . $row['CourseID'] . '"';
-                                   if (isset($_GET['khum']) && $row['CourseID'] == $_GET['khum']) 
+                                   echo '<option value="' . $row['Course_ID'] . '"';
+                                   if (isset($_GET['khum']) && $row['Course_ID'] == $_GET['khum']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['CourseID'];
+                                   echo $row['Course_ID'];
                                    echo '</option>';
                                  } ?>                  
                           </option>
@@ -72,14 +71,14 @@
                           <optgroup label="KFA/KHUM - Kent Core Requirement">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM requirements WHERE (Requirement="KHUM" OR Requirement="KFA")';
+                                $sql = 'SELECT * FROM kent_core WHERE (Requirement="KHUM" OR Requirement="KFA")';
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {         
-                                   echo '<option value="' . $row['CourseID'] . '"';
-                                   if (isset($_GET['kfa/khum']) && $row['CourseID'] == $_GET['kfa/khum']) 
+                                   echo '<option value="' . $row['Course_ID'] . '"';
+                                   if (isset($_GET['kfa/khum']) && $row['Course_ID'] == $_GET['kfa/khum']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['CourseID'];
+                                   echo $row['Course_ID'];
                                    echo '</option>';
                                  } ?>                  
                           </option>
@@ -94,14 +93,14 @@
                           <optgroup label="KSS - Kent Core Requirement">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM requirements WHERE Requirement="KSS"';
+                                $sql = 'SELECT * FROM kent_core WHERE Requirement="KSS"';
                                 $result = $pdo->query($sql);
-                                while ($row = $result->fetch()) {         
-                                   echo '<option value="' . $row['CourseID'] . '"';
-                                   if (isset($_GET['kss']) && $row['CourseID'] == $_GET['kss']) 
+                                while ($row = $result->fetch()) {
+                                   echo '<option value="' . $row['Course_ID'] . '"';
+                                   if (isset($_GET['kss']) && $row['Course_ID'] == $_GET['kss']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['CourseID'];
+                                   echo $row['Course_ID'];
                                    echo '</option>';
                                  } ?>                  
                           </option>
@@ -116,14 +115,14 @@
                           <optgroup label="KBS - Kent Core Requirement">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM requirements WHERE Requirement="KBS"';
+                                $sql = 'SELECT * FROM kent_core WHERE Requirement="KBS"';
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {         
-                                   echo '<option value="' . $row['CourseID'] . '"';
-                                   if (isset($_GET['kbs']) && $row['CourseID'] == $_GET['kbs']) 
+                                   echo '<option value="' . $row['Course_ID'] . '"';
+                                   if (isset($_GET['kbs']) && $row['Course_ID'] == $_GET['kbs']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['CourseID'];
+                                   echo $row['Course_ID'];
                                    echo '</option>';
                                  } ?>                  
                           </option>
@@ -138,14 +137,14 @@
                           <optgroup label="KLAB - Kent Core Requirement">
                             <option>
                               <?php
-                                $sql = 'SELECT * FROM requirements WHERE Requirement="KLAB"';
+                                $sql = 'SELECT * FROM kent_core WHERE Requirement="KLAB"';
                                 $result = $pdo->query($sql);
                                 while ($row = $result->fetch()) {         
-                                   echo '<option value="' . $row['CourseID'] . '"';
-                                   if (isset($_GET['klab']) && $row['CourseID'] == $_GET['klab']) 
+                                   echo '<option value="' . $row['Course_ID'] . '"';
+                                   if (isset($_GET['klab']) && $row['Course_ID'] == $_GET['klab']) 
                                       echo ' selected ';
                                    echo '>';
-                                   echo $row['CourseID'];
+                                   echo $row['Course_ID'];
                                    echo '</option>';
                                  } ?>                  
                           </option>

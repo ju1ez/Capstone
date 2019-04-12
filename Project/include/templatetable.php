@@ -23,7 +23,7 @@ foreach($roadmap as $semester){
 
     //  if($semester[$i-1] != null) causes offset error on localhost using chrome (Andy)
     if(isset($semester[$i-1]) /*!= null*/){ 
-      echo '<td>' . $semester[$i-1]['course'] . ' - ' . $semester[$i-1]['name'];
+      echo '<td>' . $semester[$i-1]['course'] . ': ' . $semester[$i-1]['name'];
       echo '<div>';
       echo '<form action="plan.php" method="post">
             <input type="hidden" name="course_name" value='.$semester[$i-1]['name'].'>

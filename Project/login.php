@@ -5,7 +5,6 @@
 <body id="mybackground">
   <div class="container-fluid">
     <div class="elementToFadeIn">
-    <!--<p class="text-center" style="color:Red; font-weight: bold; font-size: 60pt; padding: 0; margin:0;">DEMO</p>-->
       <div class="myContainerLogin">  
         <div class="row">
             <div class="col-md-12">

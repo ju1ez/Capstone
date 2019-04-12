@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse" style="margin:0px;">
+<nav class="navbar navbar-inverse" id= "noMarg">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
