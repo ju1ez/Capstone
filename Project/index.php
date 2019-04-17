@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "include/head.php"?>
+<?php session_start(); include "include/head.php"?>
 <body id="mybackground">
   <div class="container-fluid">
     <div class="elementToFadeIn">
@@ -8,7 +8,7 @@
         <div class="row">
         <div class="col-md-12"><?php include "include/nav_index.php"?></div>
          <div class="col-md-12">
-            <div class="jumbotron">
+            <div class="jumbotron" id="jumbo">
               <h1>Welcome!</h1> 
               <p>You have reached the best stop to plan for your graduation!</p> 
             </div>
@@ -47,8 +47,15 @@
              </div>
             </div>
           </div>
-      </div>
-    </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+              <footer class="footer">
+               <?php include "include/footer.php"?>
+              </footer>
+            </div>
+        </div>
+     </div>
     </div>
   </div>
 </body>

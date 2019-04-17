@@ -15,8 +15,18 @@
         <li><a href="contact.php">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="register.php"><span class="glyphicon glyphicon-thumbs-up"></span>  Register</a></li>
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+        <?php
+          if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+            echo '
+              <li><a href="welcome.php"><span class="glyphicon glyphicon-list-alt"></span> Plans</a></li>
+              <li><a href="reset.php"><span class="glyphicon glyphicon-cog"></span> Reset Password</a></li>
+              <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>';
+          } else {
+            echo '
+              <li><a href="register.php"><span class="glyphicon glyphicon-thumbs-up"></span>  Register</a></li>
+              <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>';
+          }
+        ?>
       </ul>
     </div>
   </div>

@@ -3,7 +3,7 @@
 session_start();
 //Check if user logged in, if so redirect to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: plan.php");
+    header("location: welcome.php");
     exit;
 }
 require_once "config.php";
@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;                                                       
                             //Redirect to welcome page
-                            header("location: plan.php");
+                            header("location: welcome.php");
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";

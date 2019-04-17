@@ -9,6 +9,7 @@
             <div class="row">
                 <div class="col-md-12">
                   <p style="font-size: 25pt;"><a href="index.php"><span class="glyphicon glyphicon-chevron-left"></span></a></p>
+                  <figure id ="loginImg"><img href="images/user.png" src="images/user.png" alt="User Icon" titlte = "User Icon"/></figure>
                   <h2 class="text-center">Sign Up</h2>
                   <?php echo $confirm_message; ?>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
