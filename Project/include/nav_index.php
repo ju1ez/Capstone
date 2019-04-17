@@ -10,9 +10,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-         <li class="active"><a href="#">Home</a></li>
-        <li><a href="index.php">About</a></li>
-        <li><a href="index.php">Contact Us</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="register.php"><span class="glyphicon glyphicon-thumbs-up"></span>  Register</a></li>

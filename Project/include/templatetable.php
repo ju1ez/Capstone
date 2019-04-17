@@ -1,5 +1,5 @@
 <?php
-
+//print_r($roadmap);
 $maxNumCourses=0;
 foreach($roadmap as $semester){
   $size = count($semester);

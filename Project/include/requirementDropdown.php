@@ -218,7 +218,8 @@
       echo '<option selected>Select...</option>';
         echo '<optgroup label="General Electives">';
           echo '<option>';
-            $sql = 'SELECT * FROM courses WHERE CourseKey LIKE "423%" OR CourseKey LIKE "424%"';
+            $sql = 'SELECT * FROM requirements INNER JOIN courses ON requirements.CourseID = courses.CourseID WHERE (requirements.Requirement="UE3" OR requirements.Requirement="UE4")';
+            //'SELECT * FROM courses WHERE CourseKey LIKE "423%" OR CourseKey LIKE "424%"';
             $result = $pdo->query($sql);
             while ($row = $result->fetch()) {         
             echo '<option value="'.$row['CourseID'].'"';
@@ -240,7 +241,8 @@
       echo '<option selected>Select...</option>';
         echo '<optgroup label="General Electives">';
           echo '<option>';
-            $sql = 'SELECT * FROM courses WHERE CourseKey LIKE "424%"';
+            $sql = 'SELECT * FROM requirements INNER JOIN courses ON requirements.CourseID = courses.CourseID WHERE requirements.Requirement="UE4"';
+            //'SELECT * FROM courses WHERE CourseKey LIKE "424%"';
             $result = $pdo->query($sql);
             while ($row = $result->fetch()) {         
             echo '<option value="'.$row['CourseID'].'"';

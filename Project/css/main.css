@@ -2,7 +2,6 @@
 /*Global Styling*/
 body, html {
 	height: auto;
-	
 }
 body {
 	font-family: 'Montserrat', sans-serif !important;
@@ -13,7 +12,6 @@ body {
 	margin-top: 5%;
 	margin-right: 5%;
 	margin-left: 5%;
-	margin-bottom: 5%;
 	padding: 15px;
 	background-color: rgba(255,255,255,0.4);
 	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
@@ -81,13 +79,6 @@ body {
 	from { opacity: 0; }
 	to   { opacity: 1; }
 }
-/*General Styling*/
-.customhr{
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(59, 59, 59, 0), rgba(139, 139, 139, 0.75), rgba(59, 59, 59, 0));
-}
-
 #mybackground {
 	background: black url("../images/background.png") no-repeat center center fixed; 
 	background-color: grey;
@@ -145,13 +136,13 @@ body {
 	background-color: transparent;
 }
 .navbar .navbar-toggle {
-  border-color: black; /* Removes border color */
+  border-color: black;
 }
 .navbar .navbar-toggle .icon-bar {
-  background-color: black; /* Changes regular toggle color */
+  background-color: black; 
 }
 .navbar .navbar-toggle .icon-bar:hover {
-  background-color: black; /* Changes toggle color on hover */
+  background-color: black; 
 }
 .myContent {
 	margin-left: 20pt;
@@ -216,4 +207,10 @@ div#myDiv img {
 .myPanel-title a:active {
 	text-decoration: none;
 	color: #842e9e;
+}
+#noPadding{
+	padding-bottom: 0;
+}
+.names {
+	color: purple;
 }
