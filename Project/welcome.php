@@ -5,7 +5,7 @@
 <body id="mybackground">
   <div class="container-fluid">
     <div class="elementToFadeIn">
-      <div class="myContainerIndex">
+      <div class="myContainerWelcome">
         <div class="row">
           <?php include "include/nav_welcome.php" ?>
         </div>

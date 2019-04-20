@@ -39,6 +39,16 @@ body {
 	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
 	border-radius: 3px;
 }
+.myContainerWelcome{
+	justify-content: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 10%; 
+	background-color: rgba(255,255,255,0.4);
+	box-shadow: 0 0px 30px 0 rgba(255, 255, 255, .4), 0 0px 30px 0 rgba(255, 255, 255, .4);
+	border-radius: 3px;
+	padding: 0;
+}
 .myContainerLogin h1.center {
 	font-family: 'Montserrat', sans-serif;
 	margin-left: 20pt;
