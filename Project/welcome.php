@@ -11,17 +11,18 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-              <br/>
-          </div>
-          <div class="col-md-12" id="myDiv">
             <form action="plan.php" method="get">
             <?php include "utilities/load_plans.php"; ?>
             </form>
           </div>
-          <div class="col-md-12">
-            <br/>
-          </div>
-      </div>      
+      </div>  
+      <div class="row">
+            <div class="col-md-12">
+              <footer class="footer">
+               <?php include "include/footer.php"?>
+              </footer>
+            </div>
+        </div>    
     </div>
   </div>
 </body>

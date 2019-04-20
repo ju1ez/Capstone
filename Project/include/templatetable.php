@@ -7,7 +7,7 @@ foreach($roadmap as $semester){
     $maxNumCourses = $size;
 }
 
-echo '<table class="table table-hover table-condensed"><thead><tr><th></th>';
+echo '<table class="table table-hover table-condensed table-responsive"><thead><tr><th></th>';
   for($i=1; $i <= $maxNumCourses; $i++){
     echo'<th> Course ' . $i . '</th>';
   }

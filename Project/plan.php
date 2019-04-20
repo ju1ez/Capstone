@@ -20,12 +20,12 @@ include 'utilities/treeUtils.php';
 <body id="mybackground">
   <div class="container-fluid">
     <div class="elementToFadeIn">
-      <div class="myContainerIndex">
+      <div class="myContainer">
         <!-- Top row (table) -->
         <div class="row">
           <?php include "include/nav_plan.php" ?>
-          <h2>About your plan:</h2>
-            <p>Use this feature to move your courses around. You can push a course to a later semester using the down arrow, and you can move a course back using the up arrow.</p> 
+          <h2 style="margin-left: 20pt;">About your plan:</h2>
+            <p style="margin: 20pt;">Use this feature to move your courses around. You can push a course to a later semester using the down arrow, and you can move a course back using the up arrow.</p> 
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -47,24 +47,29 @@ include 'utilities/treeUtils.php';
                 </form>
               </div>
             </div>
-            <div class="col-md-6" >
-              <div class="myContent">
-               <h2>Plan Modification:</h2>
+            <div class="col-md-6" >         
+               <h2 style="margin-top: 0;">Plan Modification:</h2>
                 <p>General Electives and Kent Core classes can be chosen for each semester by using the drop down features of this section. Simply click on a semester to expand it to see your courses. Select the course you want from the dropdown, and then click submit to see how your choices look in the above table and in your roadmap tree.<br><br>
-                In order to ensure that you graduate as soon as possible, we have already chosen the best semester to fill your elective requirements.</p>
-              </div>
+                In order to ensure that you graduate as soon as possible, we have already chosen the best semester to fill your elective requirements.</p>        
             </div>
             <!-- Visual Tree Representation of Roadmap Plan -->
-          </div>
-          <h4>Plan Visual:</h4>
+          </div>      
         </div>
-        <div class="row">
+        <div class="row" style="margin-bottom: 3pt;">
           <div class="col-md-12">
+            <h4 style="margin:20pt;">Plan Visual:</h4>
               <div id="mynetwork">
                 <script type="text/javascript">draw();</script>
               </div>
             </div>
       </div>
+      <div class="row">
+            <div class="col-md-12">
+              <footer class="footer">
+               <?php include "include/footer.php"?>
+              </footer>
+            </div>
+        </div> 
     </div>
   </div>
 </body>

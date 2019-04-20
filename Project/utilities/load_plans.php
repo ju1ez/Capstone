@@ -10,21 +10,19 @@ for($i = 0; $i < 3; $i++) {
 	if($i === 2) {
 		$plan_name = "Supplemental";
 	}
-	//<div class="col-sm-1"></div>
 	echo '
 			
-			<div class="col-sm-3">
-				<button class="btn btn-default img-responsive center-block"  name="plan" value="' . $i . '">
-				     <img src="images/plan' . $i . '.png" alt="' . $plan_name . '" />' 
-				     . '<h4 class="text-center" id ="offset">' . $plan_name . ' Plan</h4>
+			<div class="col-sm-4 text-center" id="welcome">
+				<button class="btn btn-default" name="plan" value="' . $i . '">
+				     <img style ="width: 50px; height: 50px;"src="images/plan' . $i . '.png" alt="' . $plan_name . '" />';
+				     
 				
-    	';
 
     if(isset($_SESSION["plans"][$i]) && $_SESSION["plans"][$i] !== NULL) {
-      echo '<p id ="offset" class="text-center">Modify Existing ' . $plan_name .' Plan</p>';
+      echo '<p class="text-center">Modify ' . $plan_name .' Plan</p>';
     } else {
-      echo '<p id ="offset" class="text-center">Create New ' . $plan_name . ' Plan</p>';
+      echo '<p class="text-center">Create New ' . $plan_name . ' Plan</p>';
     }
-    echo '</button></div><div class="col-sm-1"></div>';
+    echo '</button></div>';
 }
 ?>
