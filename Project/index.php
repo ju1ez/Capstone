@@ -4,7 +4,7 @@
 <body id="mybackground">
   <div class="container-fluid">
     <div class="elementToFadeIn">
-      <div class="myContainer">
+      <div class="myContainerIndex">
         <div class="row">
         <div class="col-md-12"><?php include "include/nav_index.php"?></div>
          <div class="col-md-12">

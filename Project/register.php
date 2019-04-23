@@ -12,7 +12,7 @@ require_once "config/register_config.php";
 <body id="mybackground">
   <div class="container-fluid">
     <div class="elementToFadeIn">
-        <div class="myContainerLogin" style="margin-top: 5%;">  
+        <div class="myContainerLogin">  
             <div class="row">
                 <div class="col-md-12">
                   <p style="font-size: 25pt;"><a href="index.php"><span class="glyphicon glyphicon-chevron-left"></span></a></p>
