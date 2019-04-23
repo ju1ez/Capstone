@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "include/head.php"?>
+<?php session_start(); include "include/head.php";?>
 <body id="mybackground">
   <div class="container-fluid">
     <div class="elementToFadeIn">

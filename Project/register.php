@@ -1,4 +1,11 @@
-<?php require_once "config/register_config.php" ?>
+<?php 
+require_once "config/register_config.php";
+// if(($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($confirm_message))) {
+//     //$message = 'Account created successfully.';
+//     header('Refresh: 5; URL=login.php');
+//     exit;
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include "include/head.php"?>
@@ -9,10 +16,14 @@
             <div class="row">
                 <div class="col-md-12">
                   <p style="font-size: 25pt;"><a href="index.php"><span class="glyphicon glyphicon-chevron-left"></span></a></p>
-                  <figure id ="loginImg"><img href="images/user.png" src="images/user.png" alt="User Icon" titlte = "User Icon"/></figure>
                   <h2 class="text-center">Sign Up</h2>
-                  <?php echo $confirm_message; ?>
+                  <?php echo $confirm_message;?>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                        <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
+                            <label>Email</label>
+                            <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
+                            <span class="help-block"><?php echo $email_err; ?></span>
+                        </div>
                         <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                             <label>Username</label>
                             <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">

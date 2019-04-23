@@ -1,5 +1,4 @@
 <?php
-//print_r($roadmap);
 $maxNumCourses=0;
 foreach($roadmap as $semester){
   $size = count($semester);
@@ -16,12 +15,10 @@ echo '</tr></thead>';
 $semesterNum=1;
 foreach($roadmap as $semester){
   echo '<tbody><tr>';
-  echo '<td> Semester ' . $semesterNum . '</td>';
+  echo '<th valign="middle" nowrap> Semester ' . $semesterNum . '</th>';
   $courseNum=1;
   //foreach($semester as $courses){
   for($i=1; $i <= $maxNumCourses; $i++){
-
-    //  if($semester[$i-1] != null) causes offset error on localhost using chrome (Andy)
     if(isset($semester[$i-1]) /*!= null*/){ 
       echo '<td>' . $semester[$i-1]['course'] . ': ' . $semester[$i-1]['name'];
       echo '<div>';
