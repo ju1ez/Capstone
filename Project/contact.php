@@ -10,7 +10,8 @@
          <div class="col-md-12">
             <div class="jumbotron" id="jumbo">
               <h1>Contact Us</h1> 
-              <p>This is a placeholder. We do not want to be contacted; please and thank you!</p> 
+              <p>This is a placeholder</p> 
+              <h6>We don't wish to be contacted, please and thank you</h6>
             </div>
           </div>
       </div>
