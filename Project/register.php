@@ -16,6 +16,7 @@ require_once "config/register_config.php";
             <div class="row">
                 <div class="col-md-12">
                   <p style="font-size: 25pt;"><a href="index.php"><span class="glyphicon glyphicon-chevron-left"></span></a></p>
+                  <figure id ="loginImg"><img style="width: 130px; height: 130px;" href="images/signup.png" src="images/signup.png" alt="Sign Up Icon" titlte = "Sign Up Icon"/></figure>
                   <h2 class="text-center">Sign Up</h2>
                   <?php echo $confirm_message;?>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
